@@ -1,0 +1,5 @@
+# Parallel Claude sessions each work in their own git worktree here. Without
+# this, the main checkout sees every worktree as untracked files, and one
+# careless `git add .` commits another session's whole working copy - which in
+# this repo would publish it to the live site.
+.claude/worktrees/
