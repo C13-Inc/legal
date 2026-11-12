@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy: C13 Accountant Connector</title>
+</head>
+<body>
+<h1>Privacy Policy: C13 Accountant Connector</h1>
+<p>C13 Inc. Effective 11 November 2026.</p>
+
+<h2>1. What this policy covers</h2>
+<p>This policy describes how the C13 Accountant Connector (the "Connector") handles information from
+QuickBooks Online. The Connector is an internal application that C13 Inc ("C13") built and operates
+for its own client engagements: accounting, bookkeeping, financial statement preparation, payroll and
+advisory work. It is not sold, licensed or offered to anyone else, and there is no public sign-up.</p>
+
+<h2>2. Who uses it, and on which companies</h2>
+<p>Only C13 personnel use the Connector, signed in with their C13 Microsoft accounts. It connects only
+to a QuickBooks Online company whose owner or administrator has granted access through Intuit's
+authorization screen. A C13 administrator makes each connection. A C13 administrator assigns each staff
+member the client companies they work on, and the Connector refuses any other company. A staff member
+with no assignment cannot reach any company.</p>
+
+<h2>3. What it reads and writes</h2>
+<p>When a staff member asks it to, the Connector reads company information and preferences, reports
+(such as profit and loss, balance sheet, cash flow, trial balance, general ledger and aging reports),
+lists (such as accounts, customers, vendors, employees, items, classes and terms) and transactions
+(such as invoices, bills, payments, estimates, journal entries, deposits and expenses), and attachments.</p>
+<p>It creates and updates accounting records, such as journal entries, bills, invoices, payments
+received and bill payments, customers and vendors, as part of C13's work. Before any change is sent,
+the Connector shows the staff member a preview of it in the chat and the staff member approves it; C13's
+Claude settings then require a separate approval click before the change is posted. The Connector
+refuses a change that does not match a current preview made under the same staff member's sign-in.
+The Connector does not delete or void records, does not move money, and does not use QuickBooks
+Payments. Bill payments are recorded only.</p>
+<p>At a staff member's request, the Connector also asks QuickBooks to email an invoice, estimate or
+sales receipt to the address on that record, using QuickBooks' own email service.</p>
+<p>The Connector reads and updates the employee list (names and contact details). QuickBooks Payroll
+data, such as payroll runs and pay stubs, is not available to it.</p>
+
+<h2>3a. Information about people</h2>
+<p>Client records can include names, addresses, email addresses and phone numbers of a client's
+customers, vendors and employees. For C13 staff, the Connector uses their Microsoft sign-in name and
+account identifier to record who made each change.</p>
+
+<h2>4. Where the information goes</h2>
+<ul>
+<li><strong>Intuit.</strong> The Connector exchanges data with Intuit's QuickBooks Online services over
+encrypted connections (HTTPS).</li>
+<li><strong>Microsoft Azure.</strong> The Connector runs on Microsoft Azure App Service in the United
+States (West US 3). Its encryption key is held in Azure Key Vault. Staff sign in through Microsoft
+Entra ID.</li>
+<li><strong>Anthropic.</strong> C13 staff use the Connector through Claude, an AI assistant provided by
+Anthropic under C13's Claude Team plan. When a staff member asks Claude a question, the QuickBooks
+information the Connector returns for that question is sent to Claude so it can answer. Anthropic
+processes it under its Commercial Terms of Service, which state that Anthropic may not train models
+on customer content from its services. Those terms do not commit to a location for this processing,
+so it may take place outside the Azure region named above. Claude conversations are kept in C13's
+Claude workspace until they are deleted. Anthropic removes a deleted conversation from its back-end
+systems within 30 days, except that it may keep content flagged by its trust and safety systems for
+up to two years (and the related classification scores for up to seven years), and may keep data
+where the law requires. Disconnecting a company from the Connector does not delete conversations.
+C13 has turned off the setting that lets staff send chat feedback (ratings) to Anthropic.</li>
+</ul>
+<p>C13 operates the Connector for its own engagements and does not process information on Intuit's
+behalf. C13 does not sell QuickBooks information, does not use it for advertising, and does not share
+it beyond the providers named above, except as the client directs or the law requires. The Connector
+includes no analytics, advertising or tracking services.</p>
+
+<h2>5. What the Connector keeps</h2>
+<ul>
+<li><strong>Authorization tokens</strong> for each connected company, encrypted (AES-256-GCM) with a
+key held in Azure Key Vault. When a C13 administrator disconnects a company, the Connector cancels
+them with Intuit and deletes them. When a company is disconnected inside QuickBooks, Intuit stops
+accepting them at once; the Connector then marks the company as disconnected, and deletes the
+tokens when a C13 administrator removes the company from the Connector.</li>
+<li><strong>A write log and recovery records</strong> of changes staff made: who made and confirmed the
+change, when, to which company, the record type, its QuickBooks ID and total, and, for email address
+changes and emails sent, the addresses involved. These are kept with C13's engagement records,
+currently for three years after the engagement ends.</li>
+<li><strong>C13's own settings:</strong> which clients C13 works for and the rules that limit what
+staff may change in each company.</li>
+</ul>
+<p>Apart from the write log and recovery records above, the Connector does not store the reports or
+transactions it reads. Claude conversations are covered in section 4. Work papers that staff prepare
+from that information are kept with C13's engagement records under C13's records retention
+practices, currently three years after the engagement ends. The Connector's own service logs record operational events, such as
+sign-ins, errors and which company a request was for; they do not record the contents of reports or
+transactions.</p>
+
+<h2>6. Security</h2>
+<p>The Connector accepts only HTTPS connections (TLS 1.2 or later). Staff sign in with C13 Microsoft
+accounts that require multi-factor authentication. Tokens are encrypted at rest. The Connector's own outbound connections go only to Intuit's
+QuickBooks and sign-in services and Microsoft's sign-in and Azure services; it refuses other
+addresses.</p>
+
+<h2>7. Disconnecting</h2>
+<p>A company's owner or administrator can disconnect the Connector at any time from the
+<strong>Manage integrations</strong> page in QuickBooks Online. The Connector can no longer reach the company once
+Intuit processes the disconnection. A C13 administrator can also disconnect a company. Changes already
+made to the company's records stay in its QuickBooks records.</p>
+
+<h2>7a. Requests about information</h2>
+<p>A client, or a person whose information appears in a client's records, may ask what the Connector
+keeps about them, or ask for it to be corrected or deleted, by writing to info@c13inc.com. C13 will
+respond as its engagement agreements and applicable law require. Records in QuickBooks itself are
+held by the client and Intuit.</p>
+
+<h2>8. Changes to this policy</h2>
+<p>C13 will update this policy when the Connector's handling of information changes, and will change
+the effective date when it does.</p>
+
+<h2>9. Contact</h2>
+<p>Questions: <a href="mailto:info@c13inc.com">info@c13inc.com</a></p>
+</body>
+</html>
